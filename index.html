@@ -1,0 +1,125 @@
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "bbd5de35-0636-4f82-b370-6f7aed6fd14b", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "011f0727-37d3-409e-b993-713b3f38dfb6", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMate – Your Reading Companion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #292b2c;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: #fff;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background-color: #f0f0f0;
+    }
+    .feature {
+      flex: 1 1 250px;
+      background: white;
+      margin: 1rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      color: #007BFF;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #292b2c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 BookMate</h1>
+    <p>Your Smart Reading Companion</p>
+  </header>
+
+  <section class="hero">
+    <h1>Discover. Track. Enjoy.</h1>
+    <p>Get personalized book recommendations, quick summaries, and manage your reading list with ease.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>📖 Personalized Recommendations</h3>
+      <p>Tell us what you like, and we’ll find the perfect book for you.</p>
+    </div>
+    <div class="feature">
+      <h3>📝 Summaries & Reviews</h3>
+      <p>Get quick summaries, ratings, and what readers think.</p>
+    </div>
+    <div class="feature">
+      <h3>📚 Track Your Reads</h3>
+      <p>Log your reading progress, set goals, and build your shelf.</p>
+    </div>
+    <div class="feature">
+      <h3>🧠 Smart Suggestions</h3>
+      <p>Mood-based, genre-specific, or hidden gems—BookMate's got you.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 BookMate. All rights reserved.</p>
+  </footer>
+
+  <!-- IBM Watson Assistant Chat Integration -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "bbd5de35-0636-4f82-b370-6f7aed6fd14b",
+      region: "au-syd",
+      serviceInstanceID: "011f0727-37d3-409e-b993-713b3f38dfb6",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+              (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+              "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+</html>
